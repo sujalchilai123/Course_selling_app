@@ -5,6 +5,7 @@
 We have introduced the signgin endpoints for both users and admins.
 For this one, in every authenticated requests, you need to send the jwt in headers (Authorization : "Bearer <actual token>").
 You need to use mongodb to store all the data persistently.
+Use Postman to hit various endpoints
 
 ## Routes
 
@@ -49,3 +50,9 @@ You need to use mongodb to store all the data persistently.
   Description: Lists all the courses purchased by the user.
   Input: Headers: { 'Authorization': 'Bearer <your-token>' }
   Output: { purchasedCourses: [ { id: 1, title: 'course title', description: 'course description', price: 100, imageLink: 'https://linktoimage.com', published: true }, ... ] }
+
+  ### Install all the require modules
+
+  - npm install node
+  - npm install jsonwebtoken
+  - npm install express
